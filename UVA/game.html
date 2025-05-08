@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Show do Milhão</title>
+  <link rel="stylesheet" href="css/game.css">
+</head>
+<body>
+  <div id="game-container" class="game-container">
+    <div class="header">
+      <div class="money">R$ <span id="current-money">0</span></div>
+      <div class="lifelines">
+        <button id="audience" class="lifeline" title="Ajuda da Plateia">👥</button>
+        <button id="phone" class="lifeline" title="Ligar para um Amigo">📞</button>
+        <button id="skip" class="lifeline" title="Pular">⏭️</button>
+      </div>
+    </div>
+    <div class="difficulty-info">
+      Nível: <span id="difficulty-badge" class="difficulty-badge"></span>
+    </div>
+    <div class="question-container">
+      <div class="question-header">
+        <span>❓</span>
+        <h2>Questão <span id="question-number">1</span></h2>
+      </div>
+      <p id="question" class="question-text"></p>
+      <div id="options" class="options"></div>
+    </div>
+    <div class="question-value">
+      Valor desta questão: R$ <span id="question-value"></span>
+    </div>
+  </div>
+
+  <script src="js/questions.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
